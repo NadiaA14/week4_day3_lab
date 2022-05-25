@@ -4,10 +4,14 @@
 
 {% for book in all_books %}
 <div class="book">
-    <h3>{{book.title}}</h3>
-    <h4>{{book.author.first_name}} {{book.author.last_name}}</h4>
-    <p>{{book.synopsis}}</p>
-    <p>{{book.rating}}</p>
+    <div class="title"> <h3><a href="/books/{{book.id}}">{{book.title}}</a></h3> </div>
+    
+    
+    <div class="author"><h3>{{book.author.first_name}} {{book.author.last_name}}</h3></div>
+    
+    <div class="synopsis"><h4>{{book.synopsis}}</h4></div>
+    
+    <div class="rating"><h4>Rating: {{book.rating}}</h4></div> 
     
     <form class="delete-form" action = "books/{{book.id}}/delete" method = "POST">
         <button class="trash-button"><i class ="fa fa-trash-o fa-3x" style= "color:red" aria-hidden="true"></i></button>

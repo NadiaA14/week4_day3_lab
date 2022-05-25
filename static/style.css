@@ -1,0 +1,69 @@
+@import url('https://fonts.google.com/specimen/Playfair+Display?preview.text=Book%20Mark&preview.text_type=custom#standard-styles')::after
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.book {
+    border: 2px solid #274c77;
+    width: 300px;
+    min-height: 70px;
+    padding: 10px;
+    display: inline-flexbox;
+    line-height: 18px;
+    margin-bottom: 10px;
+    color: #274c77;
+}
+
+li, a, button {
+    font-family: "Playfair";
+    font-weight: 500;
+    font-size: 20px;
+    color: #274c77;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 10%;
+    font-family: "Playfair";
+    font-size: 20px;
+    background-color: #e7ecef;
+    color: #274c77;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.menu li a {
+    transition: all 0.3s ease 0s;
+}
+
+.menu li a:hover {
+    color: #8b8c89;
+}
+
+.trash-button{
+    display: contents;
+    font-size: 65%;
+}
+
+.delete-form{
+    display: inline;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 0 auto;
+}
